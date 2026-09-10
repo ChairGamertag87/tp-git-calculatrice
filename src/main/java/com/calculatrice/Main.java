@@ -5,11 +5,12 @@ package com.calculatrice;
  */
 public class Main {
 
-    private static final String LIGNE = "+" + "-".repeat(38) + "+";
+    private static final String LIGNE = "+" + "-".repeat(46) + "+";
 
     public static void main(String[] args) {
         afficherBanniere();
         afficherMenu();
+        afficherEtat();
     }
 
     /** Affiche le titre encadré de la calculatrice. */
@@ -19,6 +20,12 @@ public class Main {
         System.out.println(centrer("C A L C U L A T R I C E"));
         System.out.println(centrer("TP Git - version 1.0"));
         System.out.println(centrer(""));
+        System.out.println(LIGNE);
+    }
+
+    /** Affiche l'état des fonctionnalités de la calculatrice. */
+    static void afficherEtat() {
+        System.out.println(ligne("Addition fonctionnelle dans la calculatrice"));
         System.out.println(LIGNE);
     }
 
